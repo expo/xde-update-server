@@ -1,0 +1,25 @@
+{
+  apps: [{
+    name: 'XDE Update Server',
+    script: 'node_modules/nuts/bin/web.js',
+    env: {
+      PORT: 3010,
+      GITHUB_REPO: 'exponentjs/xde',
+    },
+  }],
+
+  deploy: {
+    production: {
+      user: 'exponent',
+      host: 'xde-updates.exponentjs.com',
+      key: 'node_modules/@exponent/secret/exp-host.pem',
+      ref: 'origin/master',
+      repo: 'git@github.com:exponentjs/xde-update-server.git',
+      path: '/home/exponent/xde-update-server',
+      'post-deploy': [
+        'npm install --production',
+        'pm2 startOrRestart ecosystem.json5 --env production',
+      ].join(' && '),
+    }
+  }
+}
