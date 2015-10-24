@@ -4,7 +4,7 @@
   "description": "Deployment scripts for the server that announces new versions of XDE",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "pm2 deploy ecosystem.json5 production"
   },
   "repository": {
     "type": "git",
