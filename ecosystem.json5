@@ -1,7 +1,7 @@
 {
   apps: [{
     name: 'XDE Update Server',
-    script: 'node_modules/nuts/bin/web.js',
+    script: 'node_modules/nuts-serve/bin/web.js',
     env: {
       PORT: 3010,
       GITHUB_REPO: 'exponentjs/xde',
