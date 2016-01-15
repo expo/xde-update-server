@@ -5,6 +5,7 @@
     env: {
       PORT: 3010,
       GITHUB_REPO: 'exponentjs/xde',
+      TRUST_PROXY: 'loopback',
     },
   }],
 
