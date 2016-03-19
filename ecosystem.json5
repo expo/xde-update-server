@@ -4,6 +4,7 @@
     script: 'node_modules/nuts-serve/bin/web.js',
     env: {
       PORT: 3010,
+      GITHUB_ANONYMOUS: 1,
       GITHUB_REPO: 'exponentjs/xde',
       TRUST_PROXY: 'loopback',
     },
