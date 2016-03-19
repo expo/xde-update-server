@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/exponentjs/xde-update-server#readme",
   "dependencies": {
-    "nuts-serve": "exponentjs/nuts#trust-proxy"
+    "nuts-serve": "^3.0.0"
   },
   "optionalDependencies": {
     "@exponent/secret": "git@github.com:exponentjs/exponent-secret.git"
